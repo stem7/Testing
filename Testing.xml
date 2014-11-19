@@ -1,1 +1,20 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="controls_whileUntil" id="34" inline="false" x="6" y="-58">
+    <field name="MODE">WHILE</field>
+    <statement name="DO">
+      <block type="expansion_elevation" id="40" inline="true"></block>
+    </statement>
+    <next>
+      <block type="led_select" id="9" inline="true">
+        <field name="ACTION">FLASH</field>
+        <next>
+          <block type="movement_stutter" id="19">
+            <next>
+              <block type="oled_setend" id="28" inline="true"></block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
